@@ -1,0 +1,25 @@
+import torch
+
+CAMERA_INDEX = 0
+WINDOW_WIDTH = 1400
+WINDOW_HEIGHT = 900
+
+EYE_OUTPUT_SIZE = 128
+
+MASK_ALPHA = 0.45
+
+FACE_BOX_COLOR = (0, 255, 0)
+EYE_COLOR = (0, 0, 255)
+
+FONT_SCALE = 0.7
+LINE_THICKNESS = 2
+
+PREVIEW_SIZE = 180
+FPS = 30
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+SIMILARITY_THRESHOLD = 0.7
+RECOGNITION_INTERVAL = 8
+DATABASE_PATH = "Database/Faces"
+
+FAR_THRESHOLD = 0.1
